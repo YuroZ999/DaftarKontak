@@ -1,0 +1,50 @@
+name: contact_manager
+description: "Aplikasi Daftar Kontak (Contact Manager) dengan sqflite dan isar untuk perbandingan."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none'
+
+# Versi dan build number aplikasi.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+# Dependencies: sqflite (database utama), isar_community (local storage alternatif)
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ikon bawaan
+  cupertino_icons: ^1.0.8
+
+  # ===== Database utama: SQLite =====
+  sqflite: ^2.4.5
+  path: ^1.9.0
+
+  # ===== Local storage alternatif: Isar (community fork, kompatibel dengan Dart 3.13) =====
+  isar_community: ^3.4.1
+  isar_community_flutter_libs: ^3.4.1
+
+  # Mendapatkan direktori penyimpanan di perangkat untuk Isar & sqflite
+  path_provider: ^2.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lint bawaan Flutter
+  flutter_lints: ^6.0.0
+
+  # ===== Code generator untuk Isar =====
+  build_runner: ^2.4.12
+  isar_community_generator: ^3.4.1
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
