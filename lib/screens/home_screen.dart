@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           return ListView.separated(
             itemCount: contacts.length,
-            separatorBuilder: (_, _) => const Divider(height: 1),
+            separatorBuilder: (_, __) => const Divider(height: 1),
             itemBuilder: (context, index) {
               final c = contacts[index];
               return ListTile(
